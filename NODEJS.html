@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Old+Standard+TT:ital,wght@0,700;1,400&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/bdb9c44a6d.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+
+      body .start,.middile,.right{
+        position: relative;
+        padding-top: 50px;
+        list-style: none;
+       /* display:flex;*/
+   /* justify-content:flex-start;*/
+   /* padding-top: 50px;*/
+   /* padding-left: 50px;*/
+      }
+      body::before{
+        content:'';
+        background-image: url('./images/NODEJS.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top:0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        opacity:0.6;
+
+      }
+.flex{
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+}
+  /*  .start{
+        display:flex;
+    justify-content:flex-start;
+    padding-top: 100px;
+    padding-left: 50px;
+    }*/
+
+    .start{
+  padding-left: 100px;
+}
+.pright{
+    padding-right: 120px;
+}
+@media (max-width:875px) {
+    .pright{
+    padding-right: 0;
+}
+.start{
+  padding-left: 0px;
+}
+}
+.br{
+  color: white;
+}
+.y{
+  color:black;
+}
+.iblack{
+  color: white;
+  font-size: 18px;
+  padding-left: 3px;
+}
+
+@media (max-width:660px){
+       .flex{
+        flex-direction:column;
+            justify-content: center;
+            align-items: center;
+       }
+        .br,.y,.iblack{
+        color:red;
+       }
+
+}
+.ifs{
+    font-size: 0px;
+    
+}
+.bg{
+    background-color: black;
+    color:white;
+}
+ul li .bg:hover{
+    color:white;
+    background-color: #333;
+}
+.dropdown-menu{
+  background-color: black;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+abbr[title]{
+  text-decoration: none;
+}
+.icfs{
+  font-size: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="flex">
+
+    <li class="nav-item dropdown start">
+      <abbr title="Best Online websites to learn" > <a class="nav-link dropdown-toggle text-white ifs " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <b style="font-size: 21px;"class="br" >1)Websites</b><i class="fa-sharp fa-solid fa-caret-down iblack"></i>
+        </a>
+        <ul class="  dropdown-menu">
+          <li><abbr title="Udemy"><a class="dropdown-item bg icfs" href="https://www.udemy.com/" target="_blank" >1) Udemy</a></abbr></li>
+          <li><abbr title="Coursera"><a class="dropdown-item bg icfs" href="https://www.coursera.org/" target="_blank">2) Coursera</a></abbr></li>
+          <li><abbr title="Node.js Official Documentation:"><a class="dropdown-item bg icfs" href="https://legacy.reactjs.org/docs/getting-started.html" target="_blank" >3) Node.js OD</a></abbr></li>
+          <li><abbr title="LinkedIn Learning"><a class="dropdown-item bg icfs" href="https://www.linkedin.com/learning/" target="_blank" >4) LinkedIn Learning</a></abbr></li>
+          <li><abbr title="W3Schools"><a class="dropdown-item bg icfs" href="https://www.w3schools.com/nodejs/" target="_blank">5) W3Schools</a></abbr></li>
+        </ul>
+      </li>
+
+
+      <li class="nav-item dropdown middile">
+        <abbr title="Best Youtube Channels" > <a class="nav-link dropdown-toggle text-white ifs" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <b style="font-size: 21px;"class="br">2)<!--<i class="fa-brands fa-youtube y"></i>--> Channels</b><i class="fa-sharp fa-solid fa-caret-down iblack"></i>
+        </a>
+        <ul class="  dropdown-menu">
+          <li class="bg icfs">Telugu</li>
+
+          <li><abbr title="Telugu Skillhub"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=telugu+skill+hub" target="_blank">1) Telugu Skillhub</a></abbr></li>
+          <li><abbr title="CS World"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=cs+world"target="_blank">2) CS World</a></abbr></li>
+         
+          <li class="bg icfs">Hindi</li>
+          <li><abbr title="CodeWithHarry"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=code+with+harry" target="_blank">1) CodeWithHarry</a></abbr></li>
+          <li><abbr title="Apna College"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=apna+college" target="_blank">2) Apna College</a></abbr></li>
+
+
+
+          <li class="bg icfs">English</li>
+          <li><abbr title="freeCodeCamp.org"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=free+code+camp" target="_blank">1) freeCodeCamp.org</a></abbr></li>
+          <li><abbr title="Programming with Mosh"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=mosh"target="_blank">2) Mosh</a></abbr></li>
+
+        </ul>
+      </li>
+
+
+
+      <li class="nav-item dropdown right">
+        <abbr title="Online Platforms" >   <a class="nav-link dropdown-toggle text-white ifs " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <b style="font-size: 21px;"class="br">3)Platforms</b><i class="fa-sharp fa-solid fa-caret-down iblack "></i>
+        </a>
+        <ul class="  dropdown-menu">
+         <li><abbr title="HackerRank"><a class="dropdown-item bg icfs" href="https://www.hackerrank.com/"target="_blank">1) HackerRank</a></abbr></li>
+          <li><abbr title="Leet Code"><a class="dropdown-item bg icfs" href="https://leetcode.com/"target="_blank">2) Leet Code</a></abbr></li>
+          <li><abbr title="CodeSandbox"><a class="dropdown-item bg icfs" href="https://codesandbox.io/"target="_blank">3) CodeSandbox</a></abbr></li>
+          <li><abbr title="Frontend Mentor"><a class="dropdown-item bg icfs" href="https://www.frontendmentor.io/"target="_blank">4) Frontend Mentor</a></abbr></li>
+         <li><abbr title="Heroku"><a class="dropdown-item bg icfs" href="https://www.heroku.com/"target="_blank">5) Heroku</a></abbr></li>
+        </ul>
+      </li>
+
+
+
+
+
+      <li class="nav-item dropdown right">
+        <abbr title="Reference Books" >  <a class="nav-link dropdown-toggle text-white ifs " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <b style="font-size: 21px;"class="br">4)Books</b><i class="fa-sharp fa-solid fa-caret-down iblack pright"></i>
+        </a>
+        <ul class="  dropdown-menu">
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+        </ul>
+      </li>
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Old+Standard+TT:ital,wght@0,700;1,400&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/bdb9c44a6d.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+
+      body .start,.middile,.right{
+        position: relative;
+        padding-top: 50px;
+        list-style: none;
+       /* display:flex;*/
+   /* justify-content:flex-start;*/
+   /* padding-top: 50px;*/
+   /* padding-left: 50px;*/
+      }
+      body::before{
+        content:'';
+        background-image: url('./images/CSS.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top:0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        opacity:0.7;
+
+      }
+.flex{
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+}
+  /*  .start{
+        display:flex;
+    justify-content:flex-start;
+    padding-top: 100px;
+    padding-left: 50px;
+    }*/
+
+    .start{
+  padding-left: 100px;
+}
+.pright{
+    padding-right: 120px;
+}
+@media (max-width:875px) {
+    .pright{
+    padding-right: 0;
+}
+.start{
+  padding-left: 0px;
+}
+}
+.br{
+  color:white;
+}
+.y{
+  color:black;
+}
+.iblack{
+  color:white;
+  font-size: 18px;
+  padding-left: 3px;
+}
+
+@media (max-width:660px){
+       .flex{
+        flex-direction:column;
+            justify-content: center;
+            align-items: center;
+       }
+        .br,.y,.iblack{
+        color:red;
+       }
+
+}
+.ifs{
+    font-size: 0px;
+    
+}
+.bg{
+    background-color: black;
+    color:white;
+}
+ul li .bg:hover{
+    color:white;
+    background-color: #333;
+}
+.dropdown-menu{
+  background-color: black;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+abbr[title]{
+  text-decoration: none;
+}
+.icfs{
+  font-size: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="flex">
+
+    <li class="nav-item dropdown start">
+      <abbr title="Best Online websites to learn" > <a class="nav-link dropdown-toggle text-white ifs " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <b style="font-size: 21px;"class="br" >1)Websites</b><i class="fa-sharp fa-solid fa-caret-down iblack"></i>
+        </a>
+        <ul class="  dropdown-menu">
+          <li><abbr title="Udemy"><a class="dropdown-item bg icfs" href="https://www.udemy.com/" target="_blank">1) Udemy</a></abbr></li>
+          <li><abbr title="Coursera"><a class="dropdown-item bg icfs" href="https://www.coursera.org/" target="_blank">2) Coursera</a></abbr></li>
+          <li><abbr title="Khan Academy"><a class="dropdown-item bg icfs" href="https://www.khanacademy.org/computing/computer-programming/html-css" target="_blank">3) Khan Academy</a></abbr></li>
+          <li><abbr title="MDN Web Docs"><a class="dropdown-item bg icfs" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">4) MDN Web Docs</a></abbr></li>
+          <li><abbr title="W3Schools"><a class="dropdown-item bg icfs" href="https://www.w3schools.com/css/" target="_blank">5) W3Schools</a></abbr></li>
+        </ul>
+      </li>
+
+
+      <li class="nav-item dropdown middile">
+        <abbr title="Best Youtube Channels" > <a class="nav-link dropdown-toggle text-white ifs" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <b style="font-size: 21px;"class="br">2)<!--<i class="fa-brands fa-youtube y"></i>--> Channels</b><i class="fa-sharp fa-solid fa-caret-down iblack"></i>
+        </a>
+        <ul class="  dropdown-menu">
+          
+          <li class="bg icfs">Telugu</li>
+
+          <li><abbr title="Telugu web Guru"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=telugu+web+guru" target="_blank">1) Telugu Web Guru</a></abbr></li>
+          <li><abbr title="Python Life"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=python+life"target="_blank">2) Python Life</a></abbr></li>
+         
+          <li class="bg icfs">Hindi</li>
+
+          <li><abbr title="CodeWithHarry"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=code+with+harry" target="_blank">1) CodeWithHarry</a></abbr></li>
+          <li><abbr title="Apna College"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=apna+college" target="_blank">2) Apna College</a></abbr></li>
+
+
+          <li class="bg icfs">English</li>
+          <li><abbr title="Udemy"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=udemy" target="_blank">1) Udemy</a></abbr></li>
+          <li><abbr title="Traversy Media"><a class="dropdown-item bg icfs" href="https://www.youtube.com/results?search_query=traversy+media" target="_blank">2) Traversy Media</a></abbr></li> 
+         
+
+
+
+
+        </ul>
+      </li>
+
+
+
+      <li class="nav-item dropdown right">
+        <abbr title="Online Platforms" >   <a class="nav-link dropdown-toggle text-white ifs " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <b style="font-size: 21px;"class="br">3)Platforms</b><i class="fa-sharp fa-solid fa-caret-down iblack"></i>
+        </a>
+        <ul class="  dropdown-menu">
+
+          <li><abbr title="Code Pen"><a class="dropdown-item bg icfs" href="https://codepen.io/"target="_blank">1) Code Pen</a></abbr></li>
+          <li><abbr title="HackerRank"><a class="dropdown-item bg icfs" href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript"target="_blank">2) HackerRank</a></abbr></li>
+          <li><abbr title="JSFiddle"><a class="dropdown-item bg icfs" href=" https://jsfiddle.net/"target="_blank">3) JSFiddle</a></abbr></li>
+          <li><abbr title="LeetCode"><a class="dropdown-item bg icfs" href=" https://leetcode.com/"target="_blank">4) LeetCode</a></abbr></li>
+          <li><abbr title="Codewars"><a class="dropdown-item bg icfs" href=" https://www.codewars.com/"target="_blank">5) Codewars</a></abbr></li>
+          <li><abbr title="LeWagon Playground:"><a class="dropdown-item bg icfs" href="https://code-playground.lewagon.com/"target="_blank">6) LeWagon </a></abbr></li>
+          <li><abbr title="Codingame"><a class="dropdown-item bg icfs" href="https://www.codingame.com/"target="_blank">7) Codingame</a></abbr></li>
+          <li><abbr title="CodeSandbox"><a class="dropdown-item bg icfs" href="https://codesandbox.io/"target="_blank">8) CodeSandbox</a></abbr></li>
+          <li><abbr title="Responsive Web Design Projects - freeCodeCamp:"><a class="dropdown-item bg icfs" href="https://www.freecodecamp.org/learn/responsive-web-design/"target="_blank">9)FreeCodeCamp:</a></abbr></li>
+          <li><abbr title="Edabit"><a class="dropdown-item bg icfs" href="https://edabit.com/challenges"target="_blank">10) Edabit</a></abbr></li>
+
+        </ul>
+      </li>
+
+
+
+
+
+      <li class="nav-item dropdown right">
+        <abbr title="Reference Books" >  <a class="nav-link dropdown-toggle text-white ifs " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <b style="font-size: 21px;"class="br">4)Books</b><i class="fa-sharp fa-solid fa-caret-down iblack pright"></i>
+        </a>
+        <ul class="  dropdown-menu">
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+          <li><abbr title="" class="initialism"><a class="dropdown-item bg icfs" href="#">------</a></abbr></li>
+        </ul>
+      </li>
+    </div>
+</body>
+</html>

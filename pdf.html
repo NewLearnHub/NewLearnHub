@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf section</title>
+    <style>
+        body{
+    margin:2px 0px 0px 0px;
+    padding:0px;
+    background-color: lightblue;
+}
+
+
+
+
+    .pdfflex{
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width:1350px) {
+        .pdfflex{
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }   
+     .pdfflexboxes5,.pdfflexboxes6{
+        display: flex;
+        justify-content: space-between;
+
+     }
+    .pdfbox1,.pdfbox2,.pdfbox3,.pdfbox4,.pdfbox5,.pdfbox6,.pdfbox7,.pdfbox8,.pdfbox9,.pdfbox10{
+    height:300px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right:20px;
+    margin-bottom:30px;
+    }
+    .pdfem{
+        height:200px;
+        width:150px;
+        padding:21px;
+    }
+    .pdfbutton{
+        background-image:linear-gradient(to left,
+#f12711
+,
+#f5af19);
+background-image:linear-gradient(to left,
+#00f260
+,
+#0575e6);
+        margin-left: 60px;
+        border-radius: 21px;
+        padding:10px 20px;
+
+    }
+    .anchorpdf{
+        text-decoration: none;
+        font-size:15px;
+        color:white;
+    }
+
+    </style>
+</head>
+<body>
+  
+    <center><h1>ALL PDF's</h1></center>
+
+
+<div class="pdfflex"><!--max width 1 to 5 pdfs-->
+    <div class="pdfbox1">
+        <embed src="./pdf's/c++_compressed.pdf" class="pdfem" type="application/pdf"><br>
+            <button class="pdfbutton">
+            <a class="anchorpdf" href="./pdf's/c++_compressed.pdf" target="_blank">C++</a>
+            </button>
+    </div>
+
+
+    <div class="pdfbox2">  
+        <embed src="./pdf's/javanotes5_compressed.pdf" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="./pdf's/javanotes5_compressed.pdf" target="_blank">Java</a>
+     </button>
+    </div>
+
+
+    <div class="pdfbox3">  
+        <embed src="./pdf's/python_compressed.pdf" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="./pdf's/python_compressed.pdf" target="_blank">Python</a>
+     </button>
+    </div>
+
+
+
+    <div class="pdfbox4">  
+        <embed src="./pdf's/html_compressed.pdf" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="./pdf's/html_compressed.pdf" target="_blank">Html</a>
+     </button>
+    </div>
+
+    
+    <div class="pdfbox5">  
+        <embed src="./pdf's/TutorialsPoint CSS_compressed.pdf" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="./pdf's/TutorialsPoint CSS_compressed.pdf" target="_blank">Css</a>
+     </button>
+    </div>
+
+</div><!--End of max flex-->
+
+<div class="pdfflex"><!--max width 6 to 10 pdfs-->
+    <div class="pdfbox6">  
+        <embed src="./pdf's/TutorialsPoint JavaScript_compressed.pdf" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="./pdf's/TutorialsPoint JavaScript_compressed.pdf" target="_blank">JS</a>
+         </button>
+     </div>
+
+
+
+     <div class="pdfbox7">  
+        <embed src="./pdf's/console.error(object);" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="." target="_blank">!</a>
+     </button>
+    </div>
+
+
+    
+    <div class="pdfbox8">  
+        <embed src="./pdf's/console.error(object);" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="." target="_blank">!</a>
+     </button>
+    </div>
+
+
+    <div class="pdfbox9">  
+        <embed src="./pdf's/console.error(object);" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="." target="_blank">!</a>
+     </button>
+    </div>
+ 
+
+    <div class="pdfbox10">  
+        <embed src="./pdf's/console.error(object);" class="pdfem" type="application/pdf"><br>
+        <button class="pdfbutton">
+         <a class="anchorpdf" href="." target="_blank">!</a>
+     </button>
+    </div>
+
+
+</div><!--End of the max width flex-->
+
+
+</body>
+</html>
